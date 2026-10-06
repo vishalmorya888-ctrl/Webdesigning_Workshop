@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let arr = parseInt(prompt("Enter the number of values you want to add : "));
+        let values = [];
+        for (let i = 0; i < arr; i++) {
+            values[i] = parseInt(prompt("Enter the value : "));
+        }
+        function sum(...values) {
+            let total = 0;
+            for (let i=0; i < arr; i++) {
+                console.log("Enter the value : " + values[i]);
+                total = total + values[i];
+            }
+            console.log("Total sum : " + total);
+
+        }
+        sum(...values);
+    </script>
+
+</head>
+<body>
+</body>
+</html>
